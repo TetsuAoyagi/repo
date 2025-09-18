@@ -1,202 +1,399 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>高校受験 社会 練習問題（10問）</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>高校受験 社会 総合問題（30問・個別解答表示）</title>
   <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      margin: 2rem auto; max-width: 900px; line-height: 1.8; padding: 0 1rem;
-    }
-    header { margin-bottom: 1.5rem; }
-    h1 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin: 0 0 .25rem; }
-    .sub { color: #666; font-size: .95rem; }
-    section { margin: 1.6rem 0; }
-    h2 { font-size: 1.15rem; margin: .5rem 0; border-left: .4rem solid #4b7bec; padding-left: .5rem; }
-    ol { padding-left: 1.1rem; }
-    li { margin: 1rem 0; }
-    .choices { margin-top: .5rem; }
-    .choices div { margin: .15rem 0; }
-    details {
-      margin-top: .4rem; background: rgba(0,0,0,.04); border-radius: .6rem; padding: .6rem .8rem;
-    }
-    summary { cursor: pointer; font-weight: 600; }
-    .note { font-size: .9rem; color: #666; }
-    .footer { margin-top: 2rem; font-size: .9rem; color: #666; }
-    .badge { display:inline-block; font-size:.75rem; padding:.1rem .5rem; border:1px solid #bbb; border-radius:.5rem; margin-left:.4rem;}
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+            line-height: 1.6; }
+    body { margin: 0; padding: 24px; background: #f7f7f8; color: #222; }
+    .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 28px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+    h1 { margin-top: 0; }
+    h2 { margin-top: 2rem; border-left: 6px solid #ddd; padding-left: .6rem; }
+    fieldset { border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px 16px; margin: 14px 0; background: #fafafa; }
+    legend { font-weight: 700; padding: 0 .4rem; }
+    .q { margin: 6px 0 8px; font-weight: 600; }
+    .opts label { display: block; margin: 4px 0; }
+    .meta { color: #666; font-size: 14px; }
+    .credits { margin-top: 24px; color: #666; font-size: 13px; }
+    details.answer { background: #f9fafb; border: 1px dashed #d1d5db; padding: 10px 12px; border-radius: 10px; margin-top: 10px; }
+    summary { cursor: pointer; font-weight: 700; }
+    .ans-text { margin: 6px 0 0; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>高校受験 社会 練習問題（10問）</h1>
-    <div class="sub">日本史・地理・公民からバランスよく出題。各問の「解答・解説」をクリックで表示。</div>
-  </header>
-
-  <section>
-    <h2>日本史</h2>
-    <ol start="1">
-      <li>
-        縄文時代に見られる住居の代表的な形は何ですか。
-        <div class="choices">
-          <div>A. 高床倉庫</div>
-          <div>B. 竪穴住居</div>
-          <div>C. 武家屋敷</div>
-          <div>D. 長屋門</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：B</strong>　縄文時代の代表例は地面を掘り下げて柱を立てた<strong>竪穴住居</strong>。</p>
-        </details>
-      </li>
-
-      <li>
-        聖徳太子が定めたとされる政治の基本方針は何ですか。
-        <div class="choices">
-          <div>A. 大化の改新</div>
-          <div>B. 十七条の憲法</div>
-          <div>C. 武家諸法度</div>
-          <div>D. 公地公民制</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：B</strong>　役人の心得を示した法で、和を尊ぶことなどが説かれます。</p>
-        </details>
-      </li>
-
-      <li>
-        江戸幕府が鎖国体制をとったのは何世紀のことですか。
-        <div class="choices">
-          <div>A. 15世紀</div>
-          <div>B. 16世紀</div>
-          <div>C. 17世紀</div>
-          <div>D. 18世紀</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：C</strong>　17世紀前半、江戸初期に体制が整えられました。</p>
-        </details>
-      </li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>地理</h2>
-    <ol start="4">
-      <li>
-        日本で一番人口が多い都道府県はどこですか。
-        <div class="choices">
-          <div>A. 大阪府</div>
-          <div>B. 神奈川県</div>
-          <div>C. 東京都</div>
-          <div>D. 愛知県</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：C</strong>　東京都が最多です。</p>
-        </details>
-      </li>
-
-      <li>
-        日本の工業地帯・地域のうち、鉄鋼業が盛んな「臨海型」の代表はどこですか。
-        <div class="choices">
-          <div>A. 中京工業地帯</div>
-          <div>B. 瀬戸内工業地域</div>
-          <div>C. 京浜工業地帯</div>
-          <div>D. 北九州工業地帯</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：D</strong>　<strong>北九州工業地帯</strong>は八幡製鉄所に代表される重化学工業の集積で有名です。</p>
-        </details>
-      </li>
-
-      <li>
-        日本の農業に関して、次のうち稲作に最も適した気候区はどれですか。
-        <div class="choices">
-          <div>A. 北海道の冷帯気候</div>
-          <div>B. 日本海側の豪雪地帯</div>
-          <div>C. 瀬戸内の温暖少雨地域</div>
-          <div>D. 太平洋側の温暖湿潤気候</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：D</strong>　稲作は高温・多雨を必要とするため<strong>温暖湿潤</strong>が適します。</p>
-        </details>
-      </li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>公民</h2>
-    <ol start="7">
-      <li>
-        日本国憲法で「国民主権」「基本的人権の尊重」と並ぶ三大原則の一つは何ですか。
-        <div class="choices">
-          <div>A. 平和主義</div>
-          <div>B. 三権分立</div>
-          <div>C. 男女平等</div>
-          <div>D. 議会制民主主義</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：A</strong>　9条に象徴される<strong>平和主義</strong>が三大原則の一つです。</p>
-        </details>
-      </li>
-
-      <li>
-        日本の三権分立において、立法権を担うのはどこですか。
-        <div class="choices">
-          <div>A. 内閣</div>
-          <div>B. 裁判所</div>
-          <div>C. 国会</div>
-          <div>D. 地方自治体</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：C</strong>　<strong>国会</strong>が法律を制定します。</p>
-        </details>
-      </li>
-
-      <li>
-        消費者が安全で適切な商品を選ぶ権利をまとめて「消費者の四つの権利」と呼びます。次のうちその権利に含まれないものはどれですか。
-        <div class="choices">
-          <div>A. 安全を求める権利</div>
-          <div>B. 知らされる権利</div>
-          <div>C. 環境を守る権利</div>
-          <div>D. 選ぶ権利</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：C</strong>　四つの権利は「安全・知らされる・選ぶ・意見を反映させる（訴える）」です。</p>
-        </details>
-      </li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>総合問題</h2>
-    <ol start="10">
-      <li>
-        世界地理の問題です。アフリカ大陸で<strong>人口</strong>が最大の国はどこですか。 <span class="badge">表現を明確化</span>
-        <div class="choices">
-          <div>A. エジプト</div>
-          <div>B. 南アフリカ共和国</div>
-          <div>C. ナイジェリア</div>
-          <div>D. アルジェリア</div>
-        </div>
-        <details>
-          <summary>解答・解説</summary>
-          <p><strong>正解：C</strong>　<strong>ナイジェリア</strong>がアフリカ最多人口。面積最大は<strong>アルジェリア</strong>です。</p>
-        </details>
-      </li>
-    </ol>
-  </section>
-
-  <p class="footer note">
-    ※答え合わせだけでなく、暗記ポイントを問題下の短い解説で確認できる構成です。印刷時はブラウザの印刷機能をご利用ください。
-  </p>
-</body>
-</html>
+  <div class="container">
+    <h1>高校受験 社会 総合問題（30問）</h1>
+    <p class="meta">各問の下にある「答えを表示」をクリックすると、その問題の答えだけが表示されます。</p>
+<h2>地理（10問）</h2>
+<ol start="1">
+<li><fieldset><legend>第1問</legend>
+<div class="q">日本で最も面積の大きい都道府県はどこか。</div>
+<div class="opts">
+<label><input type="radio" name="q1"> A. 北海道</label>
+<label><input type="radio" name="q1"> B. 岩手県</label>
+<label><input type="radio" name="q1"> C. 長野県</label>
+<label><input type="radio" name="q1"> D. 福島県</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：A</strong>（北海道）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第2問</legend>
+<div class="q">世界の中で人口が最も多い国はどこか。（2020年代前半時点）</div>
+<div class="opts">
+<label><input type="radio" name="q2"> A. 中国</label>
+<label><input type="radio" name="q2"> B. インド</label>
+<label><input type="radio" name="q2"> C. アメリカ</label>
+<label><input type="radio" name="q2"> D. インドネシア</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（インド）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第3問</legend>
+<div class="q">ユーラシア大陸の南に広がる大洋はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q3"> A. 太平洋</label>
+<label><input type="radio" name="q3"> B. 大西洋</label>
+<label><input type="radio" name="q3"> C. インド洋</label>
+<label><input type="radio" name="q3"> D. 北極海</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（インド洋）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第4問</legend>
+<div class="q">瀬戸内工業地域で発展した工業の特色はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q4"> A. 重化学工業</label>
+<label><input type="radio" name="q4"> B. 繊維工業</label>
+<label><input type="radio" name="q4"> C. IT産業</label>
+<label><input type="radio" name="q4"> D. 農業関連工業</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：A</strong>（重化学工業）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第5問</legend>
+<div class="q">日本の三大都市圏に含まれないのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q5"> A. 東京大都市圏</label>
+<label><input type="radio" name="q5"> B. 名古屋大都市圏</label>
+<label><input type="radio" name="q5"> C. 大阪大都市圏</label>
+<label><input type="radio" name="q5"> D. 仙台大都市圏</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（仙台大都市圏）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第6問</legend>
+<div class="q">「白地図の問題」：稲作が盛んな地域はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q6"> A. 北海道</label>
+<label><input type="radio" name="q6"> B. 東北地方</label>
+<label><input type="radio" name="q6"> C. 関東地方</label>
+<label><input type="radio" name="q6"> D. 北陸地方</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（北陸地方）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第7問</legend>
+<div class="q">中東地域で特に多く産出される資源は何か。</div>
+<div class="opts">
+<label><input type="radio" name="q7"> A. 石炭</label>
+<label><input type="radio" name="q7"> B. 鉄鉱石</label>
+<label><input type="radio" name="q7"> C. 石油</label>
+<label><input type="radio" name="q7"> D. ボーキサイト</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（石油）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第8問</legend>
+<div class="q">温暖湿潤気候（Cfa）が広がるのは次のうちどこか。</div>
+<div class="opts">
+<label><input type="radio" name="q8"> A. 日本の関東地方</label>
+<label><input type="radio" name="q8"> B. サハラ砂漠</label>
+<label><input type="radio" name="q8"> C. 北欧</label>
+<label><input type="radio" name="q8"> D. 南極大陸</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：A</strong>（日本の関東地方）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第9問</legend>
+<div class="q">国際連合の本部がある都市はどこか。</div>
+<div class="opts">
+<label><input type="radio" name="q9"> A. ワシントンD.C.</label>
+<label><input type="radio" name="q9"> B. ニューヨーク</label>
+<label><input type="radio" name="q9"> C. ロンドン</label>
+<label><input type="radio" name="q9"> D. ジュネーブ</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（ニューヨーク）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第10問</legend>
+<div class="q">日本アルプスと呼ばれる山地に含まれないのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q10"> A. 北アルプス</label>
+<label><input type="radio" name="q10"> B. 南アルプス</label>
+<label><input type="radio" name="q10"> C. 中央アルプス</label>
+<label><input type="radio" name="q10"> D. 東アルプス</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（東アルプス）</p>
+</details>
+</fieldset></li>
+</ol>
+<h2>歴史（10問）</h2>
+<ol start="11">
+<li><fieldset><legend>第11問</legend>
+<div class="q">日本で最初の貨幣「和同開珎」がつくられたのはどの時代か。</div>
+<div class="opts">
+<label><input type="radio" name="q11"> A. 奈良時代</label>
+<label><input type="radio" name="q11"> B. 平安時代</label>
+<label><input type="radio" name="q11"> C. 鎌倉時代</label>
+<label><input type="radio" name="q11"> D. 室町時代</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：A</strong>（奈良時代）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第12問</legend>
+<div class="q">源頼朝が開いた幕府はどこにあったか。</div>
+<div class="opts">
+<label><input type="radio" name="q12"> A. 京都</label>
+<label><input type="radio" name="q12"> B. 鎌倉</label>
+<label><input type="radio" name="q12"> C. 江戸</label>
+<label><input type="radio" name="q12"> D. 大坂</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（鎌倉）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第13問</legend>
+<div class="q">室町幕府の将軍が住んだ邸宅を何というか。</div>
+<div class="opts">
+<label><input type="radio" name="q13"> A. 清水寺</label>
+<label><input type="radio" name="q13"> B. 鹿苑寺金閣</label>
+<label><input type="radio" name="q13"> C. 花の御所</label>
+<label><input type="radio" name="q13"> D. 東大寺</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（花の御所）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第14問</legend>
+<div class="q">織田信長が楽市・楽座を行った目的はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q14"> A. 宗教の統制</label>
+<label><input type="radio" name="q14"> B. 武士の教育</label>
+<label><input type="radio" name="q14"> C. 商業の発展</label>
+<label><input type="radio" name="q14"> D. 農地の開拓</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（商業の発展）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第15問</legend>
+<div class="q">江戸時代に鎖国の例外として貿易を許されたのはどの国か。</div>
+<div class="opts">
+<label><input type="radio" name="q15"> A. 中国と朝鮮</label>
+<label><input type="radio" name="q15"> B. オランダと中国</label>
+<label><input type="radio" name="q15"> C. イギリスとフランス</label>
+<label><input type="radio" name="q15"> D. ロシアと清</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（オランダと中国）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第16問</legend>
+<div class="q">ペリーが来航したのは何年か。</div>
+<div class="opts">
+<label><input type="radio" name="q16"> A. 1846年</label>
+<label><input type="radio" name="q16"> B. 1853年</label>
+<label><input type="radio" name="q16"> C. 1868年</label>
+<label><input type="radio" name="q16"> D. 1877年</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（1853年）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第17問</legend>
+<div class="q">明治維新後に出された「五箇条の御誓文」の内容として正しいのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q17"> A. 学校教育の開始</label>
+<label><input type="radio" name="q17"> B. 貿易の開始</label>
+<label><input type="radio" name="q17"> C. 広く会議を開き政治を行う</label>
+<label><input type="radio" name="q17"> D. 天皇中心の政治</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（広く会議を開き政治を行う）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第18問</legend>
+<div class="q">日清戦争の講和条約は何か。</div>
+<div class="opts">
+<label><input type="radio" name="q18"> A. 下関条約</label>
+<label><input type="radio" name="q18"> B. ポーツマス条約</label>
+<label><input type="radio" name="q18"> C. 日米和親条約</label>
+<label><input type="radio" name="q18"> D. 日韓併合条約</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：A</strong>（下関条約）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第19問</legend>
+<div class="q">太平洋戦争のきっかけとなった日本軍の行動はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q19"> A. 満州事変</label>
+<label><input type="radio" name="q19"> B. 南京事件</label>
+<label><input type="radio" name="q19"> C. 真珠湾攻撃</label>
+<label><input type="radio" name="q19"> D. ミッドウェー海戦</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（真珠湾攻撃）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第20問</legend>
+<div class="q">日本国憲法が公布されたのは何年か。</div>
+<div class="opts">
+<label><input type="radio" name="q20"> A. 1945年</label>
+<label><input type="radio" name="q20"> B. 1946年</label>
+<label><input type="radio" name="q20"> C. 1947年</label>
+<label><input type="radio" name="q20"> D. 1951年</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（1946年）</p>
+</details>
+</fieldset></li>
+</ol>
+<h2>公民（10問）</h2>
+<ol start="21">
+<li><fieldset><legend>第21問</legend>
+<div class="q">日本国憲法の三大原則に含まれないのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q21"> A. 国民主権</label>
+<label><input type="radio" name="q21"> B. 基本的人権の尊重</label>
+<label><input type="radio" name="q21"> C. 平和主義</label>
+<label><input type="radio" name="q21"> D. 三権分立</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（三権分立）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第22問</legend>
+<div class="q">国会が持つ権限のうち、他の機関にはないものを何というか。</div>
+<div class="opts">
+<label><input type="radio" name="q22"> A. 条約の承認</label>
+<label><input type="radio" name="q22"> B. 弾劾裁判</label>
+<label><input type="radio" name="q22"> C. 内閣不信任決議</label>
+<label><input type="radio" name="q22"> D. 予算審議</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（内閣不信任決議）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第23問</legend>
+<div class="q">衆議院の任期は何年か。</div>
+<div class="opts">
+<label><input type="radio" name="q23"> A. 2年</label>
+<label><input type="radio" name="q23"> B. 4年</label>
+<label><input type="radio" name="q23"> C. 6年</label>
+<label><input type="radio" name="q23"> D. 8年</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（4年）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第24問</legend>
+<div class="q">日本銀行の役割として正しいのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q24"> A. 税金の徴収</label>
+<label><input type="radio" name="q24"> B. 国会の議決</label>
+<label><input type="radio" name="q24"> C. 通貨の発行</label>
+<label><input type="radio" name="q24"> D. 裁判の執行</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（通貨の発行）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第25問</legend>
+<div class="q">地方自治の基本を表す言葉はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q25"> A. 地方分権</label>
+<label><input type="radio" name="q25"> B. 地方交付税</label>
+<label><input type="radio" name="q25"> C. 住民自治と団体自治</label>
+<label><input type="radio" name="q25"> D. 自由経済</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：C</strong>（住民自治と団体自治）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第26問</legend>
+<div class="q">消費者が安心して商品を購入できるように制定された法律はどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q26"> A. 独占禁止法</label>
+<label><input type="radio" name="q26"> B. 消費者基本法</label>
+<label><input type="radio" name="q26"> C. 労働基準法</label>
+<label><input type="radio" name="q26"> D. 公害対策基本法</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（消費者基本法）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第27問</legend>
+<div class="q">社会保障制度の柱に含まれないものはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q27"> A. 医療</label>
+<label><input type="radio" name="q27"> B. 年金</label>
+<label><input type="radio" name="q27"> C. 雇用</label>
+<label><input type="radio" name="q27"> D. 貿易</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（貿易）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第28問</legend>
+<div class="q">国際連合の主要機関に含まれないのはどれか。</div>
+<div class="opts">
+<label><input type="radio" name="q28"> A. 安全保障理事会</label>
+<label><input type="radio" name="q28"> B. 経済社会理事会</label>
+<label><input type="radio" name="q28"> C. 国際司法裁判所</label>
+<label><input type="radio" name="q28"> D. 欧州連合理事会</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：D</strong>（欧州連合理事会）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第29問</legend>
+<div class="q">日本で選挙権を持つことができる年齢は何歳以上か。</div>
+<div class="opts">
+<label><input type="radio" name="q29"> A. 16歳</label>
+<label><input type="radio" name="q29"> B. 18歳</label>
+<label><input type="radio" name="q29"> C. 20歳</label>
+<label><input type="radio" name="q29"> D. 21歳</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（18歳）</p>
+</details>
+</fieldset></li>
+<li><fieldset><legend>第30問</legend>
+<div class="q">地球温暖化の原因とされる二酸化炭素などの気体をまとめて何というか。</div>
+<div class="opts">
+<label><input type="radio" name="q30"> A. 酸性雨</label>
+<label><input type="radio" name="q30"> B. 温室効果ガス</label>
+<label><input type="radio" name="q30"> C. フロンガス</label>
+<label><input type="radio" name="q30"> D. 化石燃料</label>
+</div>
+<details class="answer"><summary>答えを表示</summary>
+<p class="ans-text"><strong>正解：B</strong>（温室効果ガス）</p>
+</details>
+</fieldset></li>
+</ol>
+<p class="credits">© 作問：あなたのAIアシスタント</p></div></body></html>
